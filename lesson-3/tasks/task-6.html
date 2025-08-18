@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-6</title>
+</head>
+<body>
+     <header>
+        <h1>З клавіатури вводиться номер дня тижня. Вивести на екран назву дня.</h1>
+    </header>
+    <main>
+        <script>
+            const numOfWeek = parseInt(prompt(`Введіть номер дня тижня:`, '1'))
+            let day
+            switch(numOfWeek){
+                case 1: day = "понеділок"
+                    break;
+                case 2: day = "вівторок"
+                    break;
+                case 3: day = "середа"
+                    break;
+                case 4: day = "четвер"
+                    break;
+                case 5: day = "п'ятниця"
+                    break;
+                case 6: day = "субота"
+                    break;
+                case 7: day = "неділя"
+                    break;
+                
+                default: day = "такого не існує"
+                    break;    
+            }
+
+            document.write(`Ваше введене число це: ${numOfWeek} і воно означає ${day}`)
+        </script>
+    </main>
+    <footer>
+        <a href="/index.html">До головної сторінки</a>
+    </footer>
+</body>
+</html>
